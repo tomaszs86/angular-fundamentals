@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeroDetailComponent } from "app/hero/hero-detail/hero-detail.component";
 
 @NgModule({
   declarations: [
