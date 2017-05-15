@@ -7,6 +7,8 @@ import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroDetailComponent } from "app/hero/hero-detail/hero-detail.component";
 import { HeroService } from "app/hero/hero-service";
 import { HeroDashboardComponent } from './hero-dashboard/hero-dashboard.component';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { HeroSearchService } from "app/hero/hero-search-service";
 
 @NgModule({
   imports: [
@@ -14,7 +16,7 @@ import { HeroDashboardComponent } from './hero-dashboard/hero-dashboard.componen
     HeroRoutingModule,
     FormsModule
   ],
-  declarations: [HeroListComponent, HeroDetailComponent, HeroDashboardComponent],
-  providers: [HeroService]
+  declarations: [HeroListComponent, HeroDetailComponent, HeroDashboardComponent, HeroSearchComponent],
+  providers: [HeroService, HeroSearchService]
 })
 export class HeroModule { }
